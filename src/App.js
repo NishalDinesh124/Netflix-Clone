@@ -8,6 +8,7 @@ import {originals,action,comedy,horror,romance,documentary,trending} from './url
 
 
 function App() {
+ 
   return (
     <div className="App">
       <NavBar/>
@@ -19,6 +20,9 @@ function App() {
       <RowPost title='Horror' isSmall url={horror}/>
       <RowPost title='Comedy' isSmall url={comedy}/>
       <RowPost title='Documentary' isSmall url={documentary}/>
+
+      
+
 
     </div>
   );
