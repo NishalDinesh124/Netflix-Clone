@@ -1,18 +1,20 @@
 .banner{
     background-size: cover;
-    height: 448px;
+    height: 600px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .contents{
     padding-top: 140px;
     height: 190px;
-    padding-left: 15px;
+    padding-left: 40px;
 }
 .title{
-    font-size: 3rem;
-    font-weight: 400;
-    padding-bottom: 0.3rem;
-   
+    font-size: 4rem;
+    padding-bottom: 4.3rem;
+    font-weight: 500;
 }
 .button{
     border: none;
@@ -27,6 +29,9 @@
     padding-bottom: 0.5rem;
     margin-left: 1rem;
     font-weight: 400;
+}
+.button i{
+    margin-right: 3px;
 }
 .button:hover{
     color: black;

@@ -18,7 +18,7 @@ function RowPost(props) {
     }).catch(err=>{
       alert("Network error")
     })
-  }, []);
+  },[]);
 
   const opts = {
     height: '390',
@@ -44,13 +44,13 @@ function RowPost(props) {
     <div className='row'>
         <h1>{props.title}</h1>
         <div className="posters">
-          {movies.map((obj)=>
-              <img onClick={()=>{handleMovies(obj.id)}} className={props.isSmall ? 'small_poster':'poster'} src={`${imageUrl+obj.backdrop_path}`} alt="Netflix image" /> 
+        {movies.map((obj)=>
+           <img onMouseOver={()=>{handleMovies(obj.id)} } className={props.isSmall ? 'small_poster':'poster'} src={`${imageUrl+obj.backdrop_path}`} alt="Netflix image" /> 
                
           )}          
         </div>
-        {urlId && <YouTube  videoId={urlId.key} opts={opts}/>}
-      
+        {urlId && <YouTube videoId={urlId.key} opts={opts} />} 
+             
            </div>
   );
 }

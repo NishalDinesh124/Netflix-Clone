@@ -1,19 +1,43 @@
 .navbar {
   position: fixed;
-  background-color: #111;
-  height: 30px;
-  padding: 20px;
+  background-color: transparent;
+  height: 27px;
+  padding: 24px;
   width: 100%;
+  transition: 1.3s;
+  display: flex;
+  
+}
+.navbar.scrolled{
+  background-color: #111;
+  transition: 1s;
 }
 
 .logo {
-  position: fixed;
-  width: 80px;
-  left: 20px;
+  width: 105px;
+  padding-left: 21px;
+}
+.nav-link{
+  color: white;
+  margin-left: 45px;
+  font-weight: 100;
+}
+.nav-links{
+  display: flex;
+  width: 86%;
+  justify-content: space-between;
+}
+.nav-options{
+  display: flex;
+}
+.nav-icons{
+  color: white;
+}
+.nav-icons .icons{
+  margin-left: 20px;
 }
 
 .avatar {
-  position: fixed;
   width: 30px;
-  right: 20px;
+ margin: 0 21px;
 }
